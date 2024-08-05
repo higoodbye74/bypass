@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bypass</title>
+    <script type="text/javascript">
+        function redirectToWebsite() {
+            var url = prompt("Please enter the website URL:", "http://");
+            if (url) {
+                if (!/^https?:\/\//i.test(url)) {
+                    url = "http://" + url;
+                }
+                window.location.href = url;
+            }
+        }
+    </script>
+</head>
+<body onload="redirectToWebsite()">
+    <h1>Skibidi toilet</h1>
+    <p>If you are not redirected, <a href="#" onclick="redirectToWebsite()">click here</a>.</p>
+</body>
+</html>
